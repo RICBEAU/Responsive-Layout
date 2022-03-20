@@ -1,0 +1,263 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+    background-color: #fff;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: 1em;
+	margin: 0 0 1em 0;
+    color: #b1b1b1;
+    text-align: center;
+}
+h1,
+h3,
+a {
+	color: #4a4a4a;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    color: #4b5357;
+}
+h2,
+h3 {
+	margin: 0 0 .8em 0;
+    text-align: center;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+    margin-bottom: 1.25em;
+}
+nav, .banner {
+    padding: 1em;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+nav a {
+	font-size: .95em;
+    font-weight: bold;
+	color: #4a4a4a;
+	text-transform: uppercase;
+    background-color: white;
+    margin-bottom: 0.25em;
+}
+
+a {
+    transition: .2s;
+}
+a:hover {
+	color: firebrick;
+}
+
+.row {
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+.introduction{
+    color: #fff;
+}
+.cta{
+    color: grey;
+}
+.heading {
+    padding-top:50px;
+}
+
+/* ---- Layout Containers ---- */
+
+nav {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+main {
+    width: 100%;
+    background-color: firebrick;
+    align-items: center;
+}
+.banner,
+.main-footer {
+	text-align: center;
+    align-content: center;
+    padding: 1em;
+}
+.banner {
+	color: #fff;
+	padding: 3.2em 1em;
+}
+.col {
+	padding: 1em;
+	border-radius: .35em;
+	margin: 0 .5em .8em;
+}
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 1em;
+}
+.legal {
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 2em;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+.headline {
+	margin-bottom: 0;
+}
+.feat-img {
+	border-radius: 5px;
+}
+.button {
+	color: #fff;
+	text-align: center;
+	padding: .625em 1.25em;
+	background: #3acec2;
+	border-radius: .35em;
+}
+
+.footer-nav {
+    display: none;
+}
+
+section#portfolio {
+    background-color: #fff;
+}
+
+
+
+/* --- Experience Section Style --- */
+
+section#experience {
+    padding: 2em 1em 6em 1em;
+}
+
+.card {
+    background-color: white;
+    padding: 1em 2em 2em 2em;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 4px;
+    margin-top: 1.5em;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    padding-right: 20px;
+    color: white; 
+    font-size: 12px;
+    margin-top: 0.5em;
+}
+
+.psd {width: 100%; background-color: #04AA6D;} /* Green */
+.ai {width: 100%; background-color: #2196F3;} /* Blue */
+.html {width: 80%; background-color: #f44336;} /* Red */
+.js {width: 20%; background-color: #808080;} /* Dark Grey */
+
+.exp {
+    margin-top: 1em;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+	nav,
+	.row {
+		width: 100%;
+		margin: 0 auto;
+	}
+    
+    nav a {
+        background-color:transparent;
+    }
+    
+    nav {
+        
+    }
+    
+    .banner {
+        flex-direction: row-reverse
+    }
+    .introduction {
+        font-size: 1.2em;
+        padding: 1em;
+        text-align: left;
+    }
+    .cta {
+        font-size: 1.15em;
+        width: 100%;
+        max-width: 540px;
+        margin-bottom: 2em;
+    }
+	.tagline { 
+		font-size: 1.4em;
+	}
+    .top {
+        display: none;
+    }
+    .copy {
+        margin-right: auto;
+    }
+    .footer-nav li {
+        margin-right: 8px;
+        font-weight: bold;
+    }
+}
+@media (min-width: 1024px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+    .nav-wrapper {
+        width: 100%;
+        max-width: 960px;
+    }
+}

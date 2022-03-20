@@ -1,0 +1,151 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.row {
+    flex: 1;
+}
+
+img .preview {
+    width: 100%;
+}
+
+.legal {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+ul.main-nav {
+     display: flex;
+    flex-direction: column
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+    align-items: center;     
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+	nav,
+    main,
+    footer,
+    section,
+    #main-header,
+	.main-nav,
+	.row,
+    .banner,
+    .col,
+    .details,
+    .footer-nav{
+		display: flex;
+	}
+    
+    main {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    nav,
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    
+    ul.main-nav {
+        flex-direction: row;
+    }
+    
+    .banner img {
+        order: -1;
+    }
+
+	.col {
+		flex: 1;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 350px;
+	}
+    
+    .button {
+        margin-top: auto;
+        align-self: flex-end;
+    }
+    
+    .row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        min-width: 400px;
+        max-width: 960px;
+        padding: 1em;
+    }
+    
+    .legal {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    /*----Footer----*/
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .details li {
+        padding: 1em;
+    }
+    
+
+}
+
+@media (min-width: 1024px) {
+    nav#main-header\ {
+        width: 100%;
+        max-width: 960px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+    .banner,
+    .container {
+        width: 100%;
+        max-width: 960px;
+    }
+
+    ul.main-nav {
+        flex-direction: row;
+    }
+    
+    .banner {
+        justify-content: space-between;
+        max-width: 900px;
+    }
+    
+    .col {
+        flex-basis: 250px;
+	}
+
+}
