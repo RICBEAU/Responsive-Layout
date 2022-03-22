@@ -116,11 +116,10 @@ ul.main-nav {
 }
 
 @media (min-width: 1024px) {
-    nav#main-header\ {
-        width: 100%;
+    nav#main-header {
+        flex-direction: row;
         max-width: 960px;
         justify-content: space-between;
-        flex-direction: row;
     }
     
     .container{
