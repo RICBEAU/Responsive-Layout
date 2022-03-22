@@ -55,6 +55,11 @@ nav, .banner {
     padding: 1em;
 }
 
+.logo {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
